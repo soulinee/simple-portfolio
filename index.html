@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1>Welcome to My Blog</h1>
+        <p>Sharing thoughts, stories, and ideas</p>
+    </header>
+
+    <section class="profile">
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+        <h2>About Me</h2>
+        <p>Hi! I'm [Your Name], a blogger who loves to write about [your interests]. Welcome to my corner of the internet!</p>
+        <button onclick="toggleTheme()">Switch Theme</button>
+    </section>
+
+    <section class="blog">
+        <h2>Latest Posts</h2>
+        <div class="post">
+            <h3>My First Blog Post</h3>
+            <p>Today, I decided to start my blog. It's a space to share my ideas with the world.</p>
+            <button onclick="likePost(this)">Like</button> <span class="like-count">0</span> Likes
+        </div>
+
+        <div class="post">
+            <h3>Thoughts on Nature</h3>
+            <p>Nature always inspires me. Here's why I think it's important to spend time outdoors.</p>
+            <button onclick="likePost(this)">Like</button> <span class="like-count">0</span> Likes
+        </div>
+    </section>
+
+</div>
+<script src="code.js"></script>
+</body>
+</html>
